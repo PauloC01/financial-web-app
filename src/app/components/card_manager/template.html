@@ -1,0 +1,20 @@
+<section class="card-container">
+  <form>
+    <h1>Ajuste seu limite</h1>
+    <div>
+      <div class="input-container">
+        <div>
+          <input type="text" name="limit" [(ngModel)]="model.limit">
+        </div>
+        <div>
+          <input type="range" name="limit" [(ngModel)]="model.limit"  min="0" max="10000" step="50">
+        </div>
+      </div>
+      <div class="button-container">
+        <button (click)="clear()">Reset</button>
+        <button (click)="onSubmit()">Próximo</button>
+      </div>
+    </div>
+  </form>
+</section>
+

@@ -1,0 +1,27 @@
+@import 'src/assets/scss/share';
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 380px;
+  overflow: auto;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+form{
+  margin: 15% 0;
+}
+
+select, option{
+  border-radius: 20px;
+  height: 34px;
+  border: none;
+  background-color: $input-background;
+  padding: 10px;
+}

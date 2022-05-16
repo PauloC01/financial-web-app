@@ -1,0 +1,66 @@
+@import 'src/assets/scss/share';
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-container{
+  width: 800px;
+  display: flex;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-container{
+  input{
+    background-color: $input-background;
+    border: none;
+    border-radius: 20px;
+    width: 320px;
+    height: 28px;
+  }
+
+  input::selection{
+    border-color: $white;
+  }
+}
+
+.form-button-container{
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+.bordered{
+  border-left: 3px dashed #bbb;
+}
+
+.info{
+  width: 335px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    width: fit-content;
+  }
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  .clickable{
+    cursor: pointer;
+  }
+}

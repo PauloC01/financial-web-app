@@ -1,0 +1,89 @@
+@import 'share';
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+}
+
+h1{
+  font-size:28px
+}
+
+body {
+  background-color: $background-color;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  color: $white;
+  width: 125px;
+  height: 34px;
+  background-color: $button-background;
+  border: none;
+  border-radius: 28px;
+
+  &.red-button{
+    background-color: $warning-red;
+  }
+
+  &.red-button:hover{
+    transition: 0.3s;
+    background-color: $white;
+    border: 2px solid $warning-red;
+    color: $warning-red;
+  }
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+button:hover {
+  transition: 0.3s;
+  background-color: $background-color;
+  color: $button-background;
+  border: 2px solid $button-background;
+}
+
+.card-container{
+  padding: 20px 40px;
+  background-color: $card-background;
+  width: 800px;
+  height: calc(100vh - 20vh);
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.input-container{
+  input{
+    padding-left: 12px;
+    background-color: $input-background;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 28px;
+    -webkit-box-shadow: 5px 6px 10px 2px rgba(0,0,0,0.19);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,0.19);
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

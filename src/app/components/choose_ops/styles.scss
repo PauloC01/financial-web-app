@@ -1,0 +1,21 @@
+// @import 'src/assets/scss/share';
+
+.card-container{
+  width: 400px;
+  height: auto;
+  h1{
+    margin: 25px;
+  }
+}
+
+.button-option-container{
+  button{
+    width: 150px;
+    height: 50px;
+  }
+  padding: 15px;
+  margin: 10% 0;
+  display: flex;
+  justify-content: space-around;
+}
+

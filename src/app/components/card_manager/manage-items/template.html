@@ -1,0 +1,35 @@
+<section class="card-container">
+  <section class="form-container" fxFlex="50">
+    <div>
+      <div>
+        <h1>R$ {{financialInfo.currentExpenses }}</h1>
+        <div class="info">
+          <p>Limite disponível <span class="bold">R$ {{financialInfo.limitAvaiable }}</span></p>
+          <button (click)="goToUpdateLimit()">Atualizar limite</button>
+        </div>
+      </div>
+      <form>
+        <div class="input-container">
+          <input type="text" name="description" [(ngModel)]="model.description" placeholder="Insira o nome do produto">
+        </div>
+        <div class="input-container">
+          <input type="text" name="value" [(ngModel)]="model.value" placeholder="Insira o valor">
+        </div>
+        <div class="form-button-container">
+          <button class="red-button" (click)="clear()">Limpar</button>
+          <button (click)="onSubmit()">Adicionar</button>
+        </div>
+      </form>
+    </div>
+    <div class="button-container">
+      <button (click)="backHome()">Voltar ao início</button>
+    </div>
+  </section>
+  <section class="bordered" fxFlex="50">
+    <ul>
+      <li *ngFor="let item of list">
+        <p class="item">R$ {{item.value}}, {{item.description}}<span class="clickable" (click)="removeItem(item)">x</span></p>
+      </li>
+    </ul>
+  </section>
+</section>
